@@ -1,0 +1,20 @@
+.search{
+    border: green 1px solid;
+    border-radius: 20px;
+    color: green;
+    width: 100px; 
+    margin-bottom: 5px;
+}
+.plus{
+    border:green 1px solid ;
+    border-radius: 100px;
+    color: white;
+    background-color: green;
+    margin-bottom: 5px;
+}
+.Create {
+    border: blue 1px solid;
+    color: white;
+    background-color: blue;
+    box-shadow: 10px 5px 5px black;
+}
