@@ -1,0 +1,36 @@
+h1{
+text-align: left;
+text-decoration: solid;
+color: white;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    gap: 780px;
+    border: 1px solid black;
+    background-color: gray;
+    align-items: center;
+}
+.nav-links{
+    display: flex;
+    flex-direction: row;
+    gap: 17px;
+    list-style-type: none;
+    
+    
+
+}
+a{
+    text-decoration: none;
+    color: rgb(177, 177, 177);
+}
+a:hover{
+    color: white;
+}
+button{
+    color:rgb(255, 255, 255);
+    background-color: aqua;
+}
+body { 
+    font-family: 'Roboto', sans-serif; 
+} 

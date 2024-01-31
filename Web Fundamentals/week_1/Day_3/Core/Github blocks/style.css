@@ -1,0 +1,38 @@
+h1
+{
+    text-align: center;
+    text-decoration: solid;
+}
+.c1
+{
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 80px;
+    margin: 150px;
+}
+.c2
+{
+    background-color: plum;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 80px;
+    margin: 80px;
+}
+.c3
+{
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 70px;
+    margin: 120px;
+}
+img
+{
+    height: 250px;
+    width: 150px;
+}
+h2{
+text-align: center;
+text-decoration: solid;
+}
