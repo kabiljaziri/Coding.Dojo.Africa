@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Weather</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="Dj">
+        <h1>Dojoweather</h1>
+        <div>
+            <a href="#" class="city" onclick="CityWeather()">Burbank</a>
+            <a href="#">Chicago</a>
+            <a href="#">Dallas</a>
+        </div>
+    </div>
+    <div class="header">
+        <div class="tm">
+            <h2>San Jose </h2>
+            <p>show tempreture in
+                <button>
+                    <select>
+                        <option>°C</option>
+                        <option onchange="Farenhait">F°</option>
+                    </select>
+                </button>
+            </p>
+        </div>
+    </div>
+    <div class="box1">
+        <div class="td">
+            <h1>Today </h1>
+            <img src="/assets/some_rain.png" alt="rain">
+            some rain
+            <div class="NUM">
+                <p class="red">24°</p>
+                <p class="blue">18°</p>
+            </div>
+        </div>
+        <div class="td">
+            <h1>Tomorrow</h1>
+            <img src="assets/some_sun.png" alt="sun">
+            some sun
+            <div class="NUM">
+                <p class="red">27°</p>
+                <p class="blue">19°</p>
+            </div>
+        </div>
+        <div class="td">
+            <h1>Friday</h1>
+            <img src="/assets/some_clouds.png" alt="cloud">
+            some clouds
+            <div class="NUM">
+                <p class="red">21°</p>
+                <p class="blue">16°</p>
+            </div>
+        </div>
+        <div class="td">
+            <h1>Saturday</h1>
+            <img src="/assets/some_sun.png" alt="sun">
+            some sun
+            <div class="NUM">
+                <p class="red">26°</p>
+                <p class="blue">21°</p>
+            </div>
+            <!-- cookie alert -->
+        </div>
+    </div>
+    <div class="cookie-time">
+        <div class="cookie-image"><img src="assets/cookie.png" alt="cookie"></div>
+            <div class="cookie-text"><h1>Stop! Cookie time</h1>
+        <p>We use cookies(sadly not the elible ones) to personalize <br> content and ads, to provide social media
+            features and to <br> analyse our trafic <a href="#">Read more...</a>
+        </p></div>
+        <button> I Accept</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
