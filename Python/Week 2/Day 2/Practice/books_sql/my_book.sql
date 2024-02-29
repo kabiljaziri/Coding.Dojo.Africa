@@ -5,35 +5,24 @@ SELECT * FROM books;
 
 SET SQL_SAFE_UPDATES =0;
 
-INSERT INTO books (title,num_of_pages)
- VALUES ('C Sharp',100),('JAVA',200),('Python',300),('PHP',1400),('Ruby',500);
+INSERT INTO books (title,num_of_pages) VALUES ('C Sharp',100),('JAVA',200),('Python',300),('PHP',1400),('Ruby',500);
 
-UPDATE books SET title = 'C#'
- WHERE title = 'C Sharp';
+UPDATE books SET title = 'C#' WHERE title = 'C Sharp';
 UPDATE users SET first_name = 'Bill' WHERE id = 4;
 
-INSERT INTO favorites (users_id, books_id)
- VALUES (1, 1);
-INSERT INTO favorites (users_id, books_id)
- VALUES (1, 2);
+INSERT INTO favorites (users_id, books_id) VALUES (1, 1);
+INSERT INTO favorites (users_id, books_id) VALUES (1, 2);
 
-INSERT INTO favorites(users_id, books_id)
- VALUES (2, 1);
-INSERT INTO favorites (users_id, books_id)
- VALUES (2, 2);
-INSERT INTO favorites (users_id, books_id)
- VALUES (2, 3);
+INSERT INTO favorites(users_id, books_id) VALUES (2, 1);
+INSERT INTO favorites (users_id, books_id) VALUES (2, 2);
+INSERT INTO favorites (users_id, books_id) VALUES (2, 3);
 
-INSERT INTO favorites (users_id, books_id)
- VALUES (3, 1);
-INSERT INTO favorites (users_id, books_id)
- VALUES (3, 2);
-INSERT INTO favorites (users_id, books_id)
- VALUES (3, 3);
+INSERT INTO favorites (users_id, books_id) VALUES (3, 1);
+INSERT INTO favorites (users_id, books_id) VALUES (3, 2);
+INSERT INTO favorites (users_id, books_id) VALUES (3, 3);
 INSERT favorites (users_id, books_id) VALUES (3, 4);
 
-INSERT INTO favorites (users_id, books_id)
- SELECT 4,id FROM books;
+INSERT INTO favorites (users_id, books_id) SELECT 4,id FROM books;
 select * from favorites;
 
 SELECT users.*
@@ -55,4 +44,4 @@ WHERE favorites.users_id = 3;
 SELECT users.*
 FROM users
 JOIN favorites ON users.id = favorites.users_id
-WHEREfavorites.books_id = 5;
+WHERE favorites.books_id = 5;
