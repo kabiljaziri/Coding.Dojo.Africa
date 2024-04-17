@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>welcome to Ninja Gold Game</h1>
+        <hr>
+        <form class="d-flex" method="POST">
+            <label for="" class="form_label">your Gold</label>
+            <input type="number" readonly value="0" class="form_control">
+            
+
+        </form>
+        <br>
+        <div class="d-flex justify-content-between ">
+            <div style="border :2px solid black  ; padding: 20px; text-align: centre;">
+                <h4>farm</h4>
+                <h6>(earn 10-20 golds)</h6>
+                <form action="/process_money" method="post">
+                    <input type="hidden" name="building" value="farm" />
+                    <input type="submit" value="Find Gold!"/>
+                </form>
+            </div>
+            <div style="border :2px solid black  ; padding: 20px; text-align: centre;">
+                <h4>Cave</h4>
+                <h6>(earn 5-10 golds)</h6>
+                <form action="/process_money" method="post">
+                    <input type="hidden" name="building" value="cave" />
+                    <input type="submit" value="Find Gold!"/>
+                </form>
+            </div>
+            <div style="border :2px solid black  ; padding: 20px; text-align: centre;">
+                <h4>House</h4>
+                <h6>(earn 2-5 golds)</h6>
+                <form action="/process_money" method="post">
+                    <input type="hidden" name="building" value="house" />
+                    <input type="submit" value="Find Gold!"/>
+                </form>
+            </div>
+            <div style="border :2px solid black  ; padding: 20px; text-align: centre;">
+                <h4>Casino</h4>
+                <h6>(earn/takes 0-50 golds)</h6>
+                <form action="/process_money" method="post">
+                    <input type="hidden" name="building" value="casino" />
+                    <input type="submit" value="Find Gold!"/>
+                </form>
+            </div>
+        </div>
+        <br>
+        <h3>Activities</h3>
+        <div>
+            <div style="border :2px solid black  ; padding: 50px; text-align: centre;">
+            <ul class="list-unstyled">
+                {%for activity in  session ['activities']%}
+                <li>{{activity}}</li>
+                {%endfor%}
+
+            </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

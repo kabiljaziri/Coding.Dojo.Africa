@@ -1,0 +1,15 @@
+.center-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.center-nav{
+    text-decoration: none;
+    text-decoration-line: none;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 30px;
+}
